@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <title>Document</title>
+    <style>
+        #modal1 {
+            max-width: 500px;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Modal Trigger -->
+    <a class="blue waves-effect waves-light btn modal-trigger" href="#modal1"
+      >Modal</a
+    >
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <form action="" class="login-form">
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate" />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate" />
+              <label for="password">Password</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#signup" class="btn blue text-white modal-trigger">SignUp</a>
+        <a href="#!" class="grey modal-close waves-effect waves-green btn-flat"
+          >Agree</a
+        >
+      </div>
+    </div>
+
+
+    <!-- Modal Structure -->
+    <div id="signup" class="modal">
+        <div class="modal-content">
+          <form action="" class="login-form">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate" />
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate" />
+                <label for="password">Password</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#modal1" class="btn blue text-white modal-trigger">Login</a>
+          <a href="#!" class="grey modal-close waves-effect waves-green btn-flat"
+            >Agree</a
+          >
+        </div>
+      </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".modal").modal();
+      });
+    </script>
+  </body>
+</html>
